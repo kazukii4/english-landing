@@ -135,6 +135,10 @@ hr{
     text-align: center;
     box-shadow: 0 5px 5px rgb(66, 66, 66);
 }
+h3{
+    color: red;
+    font-size: 2em;
+}
 .card-img{
     width: 100px;
     height: 100px;
