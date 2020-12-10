@@ -250,3 +250,36 @@ h2{
 .free1{
     font-size: 1em;
 }
+
+.stocks{
+    background-image: url(../static/images/Слой16.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.stocks-block{
+    color: white;
+    text-align: center;
+    max-width: 70%;
+    margin: 0 auto;
+}
+.stock-txt{
+    font-size: 3.5em;
+    padding: 8% 0;
+}
+.rub{
+    text-decoration: line-through;
+    font-size: 3em;
+    font-weight: 200;
+}
+
+#clock {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+  font-size: 56px;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 2px solid white;
+  padding: 10% 0;
+}
