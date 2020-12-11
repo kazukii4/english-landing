@@ -1,52 +1,71 @@
 @import './null/null.css';
 
-span{color: red;font-size: 1.5em;}
-p{font-size: 1.4em; line-height: 30px;}
-input{
+span {
+    color: red;
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1.4em;
+    line-height: 30px;
+}
+
+input {
     width: 25%;
     height: 60px;
     border-bottom: 1px solid white;
-    background: none; 
+    background: none;
 }
-button{
+
+button {
     width: 20%;
     height: 65px;
     font-size: large;
 }
+
 ::-webkit-input-placeholder {
     color: white;
     font-size: large;
 }
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
     font-size: large;
     color: white;
 }
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color: white;
-    font-size: large;
-}
-:-ms-input-placeholder { /* Internet Explorer 10+ */
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
     color: white;
     font-size: large;
 }
 
-header{
+:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: white;
+    font-size: large;
+}
+
+header {
     background-image: url(../static/images/BackGround.png);
     width: 100%;
     height: 110%;
     background-repeat: no-repeat;
     background-size: 100%;
 }
-nav{
+
+nav {
     width: 50%;
     margin-left: 42%;
     padding-top: 3%;
 }
-ul{
+
+ul {
     display: flex;
     justify-content: space-around;
 }
-h1{
+
+h1 {
     font-size: 4em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 350;
@@ -56,76 +75,88 @@ h1{
     letter-spacing: 15px;
     width: 60%;
 }
-.get-input{
+
+.get-input {
     width: 90%;
     margin: 8% 0 0 10%;
 }
-form{
+
+form {
     display: flex;
     justify-content: space-around;
 }
-.info-block{
+
+.info-block {
     background-color: rgba(243, 234, 234, 0.5);
     width: 100%;
     height: 700px;
     margin: 0;
 }
-.info-content{
+
+.info-content {
     padding-top: 6%;
 }
-.question-block{
+
+.question-block {
     display: flex;
     justify-content: space-around;
     padding-left: 13%;
     width: 75%;
 }
-.quest{
+
+.quest {
     position: absolute;
     margin-left: -32.5%;
     margin-top: -3.5%;
 }
-hr{
+
+hr {
     width: 1px;
     height: 190px;
     background-color: black;
 }
-.how{
+
+.how {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 100;
     text-align: right;
     text-indent: 30px;
 }
-.for{
+
+.for {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 300;
 }
 
 
-.answer-block{
+.answer-block {
     margin-top: 10%;
     margin-left: 8%;
     display: flex;
     justify-content: space-between;
     width: 85%;
 }
-.learn-time{
+
+.learn-time {
     text-align: right;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 300;
 }
-.lessons{    
+
+.lessons {
     padding-top: 2%;
     text-align: left;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
 }
-.group-1{
+
+.group-1 {
     margin-top: -25%;
     margin-left: -10%;
 }
 
 
-.all-cards{
+.all-cards {
     position: relative;
     background-image: url(../static/images/fon13.png);
     background-repeat: no-repeat;
@@ -133,14 +164,15 @@ hr{
     background-position: bottom center;
 }
 
-.users-cards{
+.users-cards {
     position: absolute;
     display: flex;
     flex-direction: column;
     margin-left: 75%;
     margin-top: -10%;
 }
-.user-card{
+
+.user-card {
     margin-top: 25%;
     padding: 6% 4%;
     width: 75%;
@@ -150,52 +182,59 @@ hr{
     text-align: justify;
     background-color: white;
 }
-h4{
+
+h4 {
     padding-top: 15%;
     padding-bottom: 5%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 1.1em;
     font-weight: bold;
 }
-.user-description{
+
+.user-description {
     padding: 1%;
     font-size: 1.1em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 20px;
     font-weight: 200;
 }
-.user-photo{
+
+.user-photo {
     position: absolute;
     margin-top: -16%;
     margin-left: 24%;
 }
 
 
-.advantages{
+.advantages {
     position: relative;
     max-width: 70%;
     margin: 5% 2.5%;
 }
-.first-cards{
+
+.first-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-.card{
+
+.card {
     margin-top: 5%;
     padding: 1% 1% 1% 1%;
     max-width: 310px;
     max-height: 280px;
     text-align: center;
-    box-shadow: 0 4px 8px  rgb(228, 221, 221);
+    box-shadow: 0 4px 8px rgb(228, 221, 221);
     border-radius: 15px;
 }
-.advantages-txt{
+
+.advantages-txt {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 600;
     font-size: 1em;
 }
-h3{
+
+h3 {
     margin-top: 7%;
     text-align: center;
     color: red;
@@ -203,39 +242,47 @@ h3{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 400;
 }
-.card-img{
+
+.card-img {
     width: 150px;
     height: 150px;
 }
-.nina{
+
+.nina {
     margin-top: -7.2%;
     width: 270px;
     height: 270px;
 }
-.nina-description{
+
+.nina-description {
     margin-top: 10%;
 }
-.img-teacher{
+
+.img-teacher {
     width: 220px;
     height: 220px;
 }
-.teachers-section .teacher__cards{
+
+.teachers-section .teacher__cards {
     position: relative;
     max-width: 70%;
     display: flex;
 }
-h2{
+
+h2 {
     font-size: 2em;
     margin-top: 20%;
 }
-.teacher__cards{
+
+.teacher__cards {
     position: absolute;
     margin-top: 35%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: space-between;
 }
-h6{
+
+h6 {
     position: absolute;
     margin-top: -8%;
     margin-left: 43%;
@@ -244,82 +291,103 @@ h6{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
 }
- 
-.teacher-card{
+
+.teacher-card {
     max-width: 25%;
     height: 90px;
     text-align: center;
 }
 
-.teacher__description{
+.teacher__description {
     font-size: 1em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
 }
 
-.arrows{
+.arrows {
     max-width: 75%;
     text-align: center;
     margin: 0 auto;
     padding-top: 32%;
     padding-bottom: 2%;
 }
-.free{
+
+.free {
     line-height: 1.5;
     font-size: 2em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 200;
 }
-.free1{
+
+.free1 {
     font-size: 1em;
 }
 
-.stocks{
+.stocks {
     background-image: url(../static/images/Слой16.png);
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 100%;
+    height: 870px;
+    margin: 0 auto;
 }
-.stocks-block{
+
+.stocks-block {
     color: white;
     text-align: center;
     max-width: 70%;
     margin: 0 auto;
 }
-.stock-txt{
+
+.stock-txt {
     font-size: 3.5em;
     padding: 8% 0;
     line-height: 1.3;
 }
-.rub{
+
+.img {
+    padding-top: 2%;
+}
+
+#clock {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 56px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 2px solid white;
+    padding: 5% 0;
+    display: flex;
+    justify-content: center;
+}
+
+#clock span {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 220px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+#clock div{
+    margin-top: 20%;
+    margin-left: -14%;
+    text-align: left;
+    font-size: 0.8em;
+    font-weight: 100;
+}
+.rub {
     text-decoration: line-through;
     font-size: 3em;
     font-weight: 200;
     margin-top: 2%;
 }
-.img{
-    padding-top: 2%;
-}
-
-#clock {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  color: white;
-  font-size: 56px;
-  text-align: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  border-radius: 2px solid white;
-  padding: 10% 0;
- display: flex;
-    justify-content: center;
-}
-#clock div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    border: 1px solid white;
-    margin-left: 15px;
+label{
     border-radius: 50%;
+    margin-top: 3.5%;
+    margin-left: 5%;
+    margin-right: 1.5%;
+    font-size: 2em;
 }
