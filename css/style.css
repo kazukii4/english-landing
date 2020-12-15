@@ -1,4 +1,67 @@
 @import './null/null.css';
+
+
+
+.timer{
+    font-size: 0;
+    text-align: center;
+}
+.timer_section{
+    display: inline-block;
+    vertical-align: top;
+}
+.timer_section > div{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 50px;
+    background: #4dadf7;
+    color: #ffffff;
+    line-height: 70px;
+    width: 55px;
+    margin: 0 1px;
+    border-radius: 2px;
+}
+.timer_section > div.timer_section_desc{
+    display: block;
+    background: none;
+    color: inherit;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 30px;
+    width: auto;
+    margin: 0;
+}
+.timer_delimetr{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 50px;
+    line-height: 70px;
+    margin: 0 5px;
+}
+@media (max-width: 767px){
+    .timer_section > div{
+        font-size: 30px;
+        width: 30px;
+        line-height: 40px;
+    }
+    .timer_delimetr{
+        line-height: 40px;
+        font-size: 30px;
+    }
+    .timer_section > div.timer_section_desc{
+        font-size: 14px;
+        line-height: 26px;
+    }
+}
+
+
+
+
+
+
+body{
+    overflow-x: hidden;
+}
 span {
     color: red;
     font-size: 1.5em;
@@ -54,8 +117,8 @@ header {
 }
 
 nav {
-    width: 50%;
-    margin-left: 42%;
+    max-width: 70%;
+    margin-left: 40%;
     padding-top: 3%;
 }
 
@@ -65,19 +128,20 @@ ul {
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 3.6em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 350;
     color: white;
     text-align: center;
-    margin: 18% 0 0 20%;
+    margin: 14% auto;
+    margin-bottom: 10%;
     letter-spacing: 15px;
-    width: 60%;
+    max-width: 80%;
 }
 
 .get-input {
-    width: 90%;
-    margin: 8% 0 0 10%;
+    max-width: 90%;
+    margin: 0 auto;
 }
 
 form {
@@ -88,8 +152,6 @@ form {
 .info-block {
     background-color: rgba(243, 234, 234, 0.5);
     width: 100%;
-    height: 700px;
-    margin: 0;
 }
 
 .info-content {
@@ -98,21 +160,21 @@ form {
 
 .question-block {
     display: flex;
-    justify-content: space-around;
-    padding-left: 13%;
-    width: 75%;
+    margin-left: 15%;
+    width: 100%;
 }
 
 .quest {
     position: absolute;
-    margin-left: -32.5%;
     margin-top: -3.5%;
+    margin-left: -8%;
 }
 
 hr {
     width: 1px;
     height: 190px;
     background-color: black;
+    margin: 0 3%;
 }
 
 .how {
@@ -120,11 +182,13 @@ hr {
     font-weight: 100;
     text-align: right;
     text-indent: 30px;
+    font-size: 1em;
 }
 
 .for {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 300;
+    font-size: 1em;
 }
 
 
@@ -133,13 +197,14 @@ hr {
     margin-left: 8%;
     display: flex;
     justify-content: space-between;
-    width: 85%;
 }
 
 .learn-time {
     text-align: right;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 300;
+    font-size: 1em;
+    max-width: 500px;
 }
 
 .lessons {
@@ -151,7 +216,7 @@ hr {
 
 .group-1 {
     margin-top: -25%;
-    margin-left: -10%;
+    margin-left: -8%;
 }
 
 
@@ -172,9 +237,9 @@ hr {
 }
 
 .user-card {
-    margin-top: 25%;
+    margin-top: 28%;
     padding: 6% 4%;
-    width: 75%;
+    width: 80%;
     height: 100%;
     border: 1px solid black;
     border-radius: 20px;
@@ -208,7 +273,7 @@ h4 {
 .advantages {
     position: relative;
     max-width: 70%;
-    margin: 5% 2.5%;
+    margin: 10% 2.5%;
 }
 
 .first-cards {
@@ -220,8 +285,8 @@ h4 {
 .card {
     margin-top: 5%;
     padding: 1% 1% 1% 1%;
-    max-width: 310px;
-    max-height: 280px;
+    max-width: 280px;
+    max-height: 100%;
     text-align: center;
     box-shadow: 0 4px 8px rgb(228, 221, 221);
     border-radius: 15px;
@@ -234,32 +299,31 @@ h4 {
 }
 
 h3 {
-    margin-top: 7%;
+    margin-top: 10%;
     text-align: center;
     color: red;
-    font-size: 2.5em;
+    font-size: 2.2em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 400;
 }
 
 .card-img {
-    width: 150px;
-    height: 150px;
+    width: 40%;
 }
 
 .nina {
-    margin-top: -7.2%;
-    width: 270px;
-    height: 270px;
+    margin-top: -7%;
+    width: 250px;
+    height: 250px;
 }
 
 .nina-description {
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 .img-teacher {
-    width: 220px;
-    height: 220px;
+    width: 200px;
+    height: 200px;
 }
 
 .teachers-section .teacher__cards {
@@ -275,7 +339,7 @@ h2 {
 
 .teacher__cards {
     position: absolute;
-    margin-top: 35%;
+    margin-top: 50%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: space-between;
@@ -438,7 +502,7 @@ footer {
     padding: 4%;
     margin-top: 3%;
     width: 700px;
-    height: 650px;
+    height: 600px;
     background-color: rgba(37, 87, 87, 0.473);
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -450,7 +514,7 @@ footer {
     max-width: 600px;
 }
 .pay-block img{
-    background-color: rgb(75, 74, 74);
+    background-color: rgb(255, 255, 255);
 }
 .second-var{
     padding-top: 7%;
@@ -476,3 +540,13 @@ footer {
     font-size: 1.7em;
     padding: 10% 28%;
 }
+
+/* @media screen and (min-width: 1024px){
+    nav{
+        width: 630px;
+        margin-left: 35%;
+    }
+    h1{
+        width: 700px;
+    }
+} */
