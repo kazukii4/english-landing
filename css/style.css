@@ -1,64 +1,4 @@
 @import './null/null.css';
-
-
-
-.timer{
-    font-size: 0;
-    text-align: center;
-}
-.timer_section{
-    display: inline-block;
-    vertical-align: top;
-}
-.timer_section > div{
-    display: inline-block;
-    vertical-align: top;
-    font-size: 50px;
-    background: #4dadf7;
-    color: #ffffff;
-    line-height: 70px;
-    width: 55px;
-    margin: 0 1px;
-    border-radius: 2px;
-}
-.timer_section > div.timer_section_desc{
-    display: block;
-    background: none;
-    color: inherit;
-    text-transform: uppercase;
-    font-size: 16px;
-    line-height: 30px;
-    width: auto;
-    margin: 0;
-}
-.timer_delimetr{
-    display: inline-block;
-    vertical-align: top;
-    font-size: 50px;
-    line-height: 70px;
-    margin: 0 5px;
-}
-@media (max-width: 767px){
-    .timer_section > div{
-        font-size: 30px;
-        width: 30px;
-        line-height: 40px;
-    }
-    .timer_delimetr{
-        line-height: 40px;
-        font-size: 30px;
-    }
-    .timer_section > div.timer_section_desc{
-        font-size: 14px;
-        line-height: 26px;
-    }
-}
-
-
-
-
-
-
 body{
     overflow-x: hidden;
 }
@@ -463,8 +403,9 @@ footer {
     background-color: rgba(19, 196, 196, 0.192);
     width: 100%;
     background-size: 100%;
-    height: 110%;
+    height: 123%;
     margin: 0;
+    margin-top: -8.5%;
 }
 .photo-content{
     padding: 5% 0 0 7%;
@@ -540,13 +481,3 @@ footer {
     font-size: 1.7em;
     padding: 10% 28%;
 }
-
-/* @media screen and (min-width: 1024px){
-    nav{
-        width: 630px;
-        margin-left: 35%;
-    }
-    h1{
-        width: 700px;
-    }
-} */
