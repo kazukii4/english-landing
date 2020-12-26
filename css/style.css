@@ -1,7 +1,13 @@
 @import './null/null.css';
-body{
+
+html,
+body,
+.grid-container {
+    height: 100%;
+    margin: 0;
     overflow-x: hidden;
 }
+
 span {
     color: red;
     font-size: 1.5em;
@@ -64,16 +70,25 @@ nav {
 
 ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+}
+
+ul a li {
+    font-size: 1.5em;
+    font-weight: 350;
+}
+
+ul a li:hover {
+    color: red;
 }
 
 h1 {
-    font-size: 3.6em;
+    font-size: 3.1em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 350;
     color: white;
     text-align: center;
-    margin: 14% auto;
+    margin: 18% auto;
     margin-bottom: 10%;
     letter-spacing: 15px;
     max-width: 80%;
@@ -87,6 +102,11 @@ h1 {
 form {
     display: flex;
     justify-content: space-around;
+}
+
+div form button:hover {
+    transition: 1.5s;
+    background-color: rgb(165, 163, 160);
 }
 
 .info-block {
@@ -105,7 +125,6 @@ form {
 }
 
 .quest {
-    position: absolute;
     margin-top: -3.5%;
     margin-left: -8%;
 }
@@ -160,6 +179,151 @@ hr {
 }
 
 
+
+/* grid card containers */
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2.1fr 0.1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    background-image: url(../static/images/fon13.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.grid-container * {
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+
+
+.first-card {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.first-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+h3 {
+    margin-top: 8%;
+    text-align: center;
+    color: rgb(201, 43, 43);
+    font-size: 2.2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 300;
+}
+
+.card {
+    margin-top: 4%;
+    padding: 3% 1% 1% 1%;
+    max-width: 260px;
+    height: 240px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgb(228, 221, 221);
+    border-radius: 15px;
+}
+
+.advantages-txt {
+    padding: 5% 1%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    font-size: 0.8em;
+}
+
+.card-img {
+    width: 35%;
+}
+
+/* 
+second cards */
+.second-cards {
+    grid-area: 3 / 1 / 4 / 3;
+}
+
+.nina {
+    margin-top: -7%;
+    width: 250px;
+    height: 250px;
+}
+
+.nina-description {
+    margin-top: 3%;
+}
+
+.img-teacher {
+    width: 200px;
+    height: 200px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 20%;
+}
+
+.teacher__cards {
+    margin-top: -25%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+}
+
+h6 {
+    color: rgb(204, 51, 51);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2em;
+    margin-top: -10%;
+    left: 40%;
+}
+
+.teacher-card {
+    max-width: 25%;
+    /* height: 190px; */
+    text-align: center;
+}
+
+.teacher__description {
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.third-cards {
+    grid-area: 1 / 4 / 4 / 5;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 
 .all-cards {
     position: relative;
     background-image: url(../static/images/fon13.png);
@@ -174,19 +338,17 @@ hr {
     flex-direction: column;
     margin-left: 75%;
     margin-top: -10%;
-}
+}*/
 
-.user-card {
+/* .user-card {
     margin-top: 28%;
     padding: 6% 4%;
-    width: 80%;
-    height: 100%;
     border: 1px solid black;
     border-radius: 20px;
     text-align: justify;
     background-color: white;
-}
-
+}  */
+/* 
 h4 {
     padding-top: 15%;
     padding-bottom: 5%;
@@ -215,97 +377,25 @@ h4 {
     max-width: 70%;
     margin: 10% 2.5%;
 }
+*/
 
-.first-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
 
-.card {
-    margin-top: 5%;
-    padding: 1% 1% 1% 1%;
-    max-width: 280px;
-    max-height: 100%;
-    text-align: center;
-    box-shadow: 0 4px 8px rgb(228, 221, 221);
-    border-radius: 15px;
-}
 
-.advantages-txt {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 600;
-    font-size: 1em;
-}
 
-h3 {
-    margin-top: 10%;
-    text-align: center;
-    color: red;
-    font-size: 2.2em;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: 400;
-}
 
-.card-img {
-    width: 40%;
-}
 
-.nina {
-    margin-top: -7%;
-    width: 250px;
-    height: 250px;
-}
 
-.nina-description {
-    margin-top: 5%;
-}
 
-.img-teacher {
-    width: 200px;
-    height: 200px;
-}
 
-.teachers-section .teacher__cards {
-    position: relative;
-    max-width: 70%;
-    display: flex;
-}
 
-h2 {
-    font-size: 2em;
-    margin-top: 20%;
-}
 
-.teacher__cards {
-    position: absolute;
-    margin-top: 50%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: flex;
-    justify-content: space-between;
-}
 
-h6 {
-    position: absolute;
-    margin-top: -8%;
-    margin-left: 43%;
-    color: white;
-    font-size: 2.3em;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 400;
-}
 
-.teacher-card {
-    max-width: 25%;
-    height: 90px;
-    text-align: center;
-}
 
-.teacher__description {
-    font-size: 1em;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 400;
-}
+
+
+
+
 
 .arrows {
     max-width: 75%;
@@ -351,6 +441,10 @@ h6 {
     padding-top: 2%;
 }
 
+
+
+
+/* 
 #clock {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
@@ -381,6 +475,16 @@ h6 {
     text-align: left;
     font-size: 0.8em;
     font-weight: 100;
+} */
+
+#demo {
+    font-size: 5em;
+    position: absolute;
+    margin-left: 27%;
+}
+
+.cost {
+    margin-top: 20%;
 }
 
 .rub {
@@ -407,11 +511,13 @@ footer {
     margin: 0;
     margin-top: -8.5%;
 }
-.photo-content{
+
+.photo-content {
     padding: 5% 0 0 7%;
     display: flex;
 }
-.absolutly-photo{
+
+.absolutly-photo {
     background-image: url(../static/images/Формоплбэк.png);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -419,19 +525,23 @@ footer {
     height: 750px;
     color: white;
 }
-.center-txt{
+
+.center-txt {
     padding-top: 20%;
     text-align: center;
 }
-.follow-course{
+
+.follow-course {
     font-size: 3em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
 }
-.costs{
+
+.costs {
     padding-top: 15%;
 }
-.last-txt{
+
+.last-txt {
     max-width: 550px;
     font-size: 0.7em;
     padding: 18% 10%;
@@ -439,7 +549,7 @@ footer {
 }
 
 
-.pay-block{
+.pay-block {
     padding: 4%;
     margin-top: 3%;
     width: 700px;
@@ -449,34 +559,42 @@ footer {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 0.7em;
 }
-.pay-block ul{
+
+.pay-block ul {
     display: flex;
     justify-content: space-around;
     max-width: 600px;
 }
-.pay-block img{
+
+.pay-block img {
     background-color: rgb(255, 255, 255);
 }
-.second-var{
+
+.second-var {
     padding-top: 7%;
 }
-.number-input{
+
+.number-input {
     flex-direction: column;
 }
-.number-input input{
+
+.number-input input {
     width: 98%;
     height: 80px;
 }
-.btn-link{
+
+.btn-link {
     display: flex;
     flex-direction: column;
     margin: 8% 25%;
 }
-.pay-block button{
+
+.pay-block button {
     width: 300px;
     height: 90px;
 }
-.pay-block a{
+
+.pay-block a {
     color: white;
     font-size: 1.7em;
     padding: 10% 28%;
